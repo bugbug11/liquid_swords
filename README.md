@@ -1,2 +1,2 @@
-# liquid_swords
-Adds liquid swords and bucket swords to Luanti
+# liquid_swords (WIP)
+Adds liquid swords to Luanti
