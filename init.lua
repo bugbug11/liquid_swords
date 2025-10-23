@@ -16,10 +16,11 @@ for itemname in liquid_swords.liquid_nodes do -- For each liquid node
   end
   local description_from_source = core.registered_nodes[itemname].description -- Get the node description
   local description = false -- Actual description for the sword
-  if description_from_source:find("Source") then -- If "Source" is found in the itemname
-    description = description_from_source:gsub("Source", "") .. " Sword" -- Remove "Source"
+  if description_from_source:find(" Source") then -- If "Source" is found in the itemname
+    description = description_from_source:gsub(" Source", "") .. " Sword" -- Remove "Source"
   else 
     description = description_from_source .. " Sword" -- Otherwise keep the description
+  end
   core.register_tool("liquid_swords:sword_"..name_from_source, {
       -- TODO: Add tool properties
       -- NOTE: The texture should be like "liquid_swords_base.png^(liquid_swords_blade.png^SOURCE_TEXTURE)"
