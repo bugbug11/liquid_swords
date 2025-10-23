@@ -1,4 +1,4 @@
-# liquid_swords (WIP)
+# liquid_swords (unstable)
 Adds liquid swords to Luanti
 
 ## TODO
