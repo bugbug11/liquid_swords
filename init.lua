@@ -1,5 +1,3 @@
-core.after(0, function()
-
 local liquid_swords = {} -- Table for storing runtime mod data
 liquid_swords.liquid_nodes = {} -- Table for storing liquid nodes
 for itemname, _ in pairs(core.registered_nodes) do
@@ -64,5 +62,3 @@ end
 	})
     ::continue::
 end
-
-end)
