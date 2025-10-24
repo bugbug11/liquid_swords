@@ -44,7 +44,7 @@ end
         goto continue
     end
 	local sword_image = "liquid_swords_base.png^(liquid_swords_blade.png^("..source_texture.."))"
-    local final_sword_name = "ls:" .. "sword_" .. name_from_source
+    local final_sword_name = "liquid_swords:" .. "sword_" .. name_from_source
 	core.register_tool(final_sword_name, {
 		description = description,
 		inventory_image = sword_image,
